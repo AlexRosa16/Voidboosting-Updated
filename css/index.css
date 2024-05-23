@@ -1,0 +1,821 @@
+body, header, header > img {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    
+    background-color:  #10032A ;
+    padding-left: 20px;
+    height: 200px; 
+    display: flex; 
+
+    
+}
+
+.imagenlogo{
+    object-fit: cover;
+
+}
+
+.main {
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mainvayne.jpg);
+    background-size: cover ;
+    height: 500px ;
+    gap: 70px ;
+}
+
+
+
+
+.main h1{
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 600px;
+
+}
+
+.main p{
+    font-size: larger;
+    color: white;
+    position: absolute;
+    top: 400px;
+    left: 530px;
+    width: 750px;
+    text-align: center;
+}
+
+
+
+
+
+
+.idiomaicon{
+
+    width: 30px;
+    height: 30px;
+    position: absolute; 
+    top: 80px;              
+    right: 250px;      
+
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    background-color: #10032A;
+    color: white;
+}
+
+
+.footer-title {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    position: relative; 
+    padding: 5px;
+}
+
+.footer-title::after {
+    content: ""; 
+    position: absolute; 
+    bottom: -5px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 350px; 
+    height: 1px; 
+    background-color: rgb(124, 116, 236); 
+    z-index: 1; 
+}
+
+
+.footer-links {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.footer-links p {
+    margin: 5px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.animated-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    outline: none;
+    overflow: hidden;
+    position: relative; /* Cambiado de 'absolute' a 'relative' */
+    border-radius: 7%;
+    background-color: #10032A;
+    top: 100px;
+    right: 40px;
+    color: rgb(201, 197, 197);
+
+}
+
+.animated-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: center;
+    width: 300%;
+    height: 300%;
+    background-color: currentColor;
+    transition: transform 0.3s, opacity 0.3s;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 0;
+}
+
+.animated-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.2;
+}
+
+.purple:hover, .white:hover {
+    color: white;
+}
+.purple:hover {
+    background-color: #8a2be2;
+}
+
+.white:hover {
+    background-color: purple;
+}
+
+
+
+.button-container {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    position: absolute; 
+    right: 600px;     
+}
+
+
+.button {
+    width: 100px;
+    height: 50px; 
+    background-color: #10032A; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    border-radius: 5px; 
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    mix-blend-mode: screen;
+}
+
+
+.menuterminos{ 
+
+    width: 100%;     
+    background-size: cover;
+    padding-left: 100px; 
+    padding-top: 20px;
+    padding-right: 100px;
+    box-sizing: border-box; 
+    overflow: auto;
+    background-color: rgb(202, 202, 202);
+    
+
+
+}
+
+
+.login{ 
+
+    width: 100%;   
+    background-size: cover;
+    box-sizing: border-box; 
+    padding-bottom: 50px;
+
+
+}
+
+
+.menuterminos p,h3{
+
+    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    width: 100%;      
+    overflow-wrap: break-word; 
+    word-wrap: break-word;     
+    hyphens: auto;     
+}
+
+.menuterminos h1{
+
+    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    width: 20%;      
+    overflow-wrap: break-word; 
+    word-wrap: break-word;    
+    hyphens: auto;     
+}
+
+
+.politicas{ 
+
+    width: 100%;     
+    background-color: rgb(202, 202, 202);
+    background-size: cover;
+    padding-left: 100px; 
+    padding-top: 20px;
+    padding-right: 100px; 
+    box-sizing: border-box; 
+    overflow: auto;
+
+
+}
+
+.politicas p{
+
+    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    width: 100%;      
+    overflow-wrap: break-word; 
+    word-wrap: break-word;     
+    hyphens: auto;     
+}
+
+.politicas h1,h2{
+
+    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #6749a5;
+    width: 100%;      
+    overflow-wrap: break-word; 
+    word-wrap: break-word;    
+    hyphens: auto;     
+}
+
+
+.rembolsos { 
+    width: 100%;     
+    background-color: rgb(202, 202, 202);
+    background-size: cover;
+    padding-left: 100px; 
+    padding-top: 20px; 
+    padding-right: 100px; 
+    box-sizing: border-box;
+    overflow: auto;
+
+}
+
+.rembolsos p {
+    padding-left: 50px;
+    font-family: "Gill Sans", sans-serif;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    width: calc(100% - 50px); 
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    hyphens: auto;     
+}
+
+.rembolsos h1 {
+    font-family: "Gill Sans", sans-serif;
+    margin: 0;
+    color: #6749a5;
+    width: 100%;       
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;      
+}
+
+.nosotros{
+    width: 100%;     
+    background-color: rgb(202, 202, 202);
+    background-size: cover;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-right: 100px; 
+    box-sizing: border-box;
+    overflow: auto;
+
+}
+
+
+.nosotros p{
+
+    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    width: 100%;      
+    overflow-wrap: break-word; 
+    word-wrap: break-word;    
+    hyphens: auto;     
+}
+
+.nosotros h1,h2{
+
+    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #6749a5;
+    width: 100%;      
+    overflow-wrap: break-word;
+    word-wrap: break-word;    
+    hyphens: auto;     
+}
+
+.faqs{
+
+    width: 100%;     
+    background-color: rgb(202, 202, 202);
+    background-size: cover;
+    padding-left: 100px;
+    padding-top: 20px; 
+    padding-right: 100px; 
+    box-sizing: border-box;
+    overflow: auto;
+
+
+}
+
+
+
+.faqs p{
+
+    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    width: 100%;      
+    overflow-wrap: break-word; 
+    word-wrap: break-word;    
+    hyphens: auto;     
+}
+
+.faqs h2{
+
+    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #6749a5;
+    width: 100%;      
+    overflow-wrap: break-word; 
+    word-wrap: break-word;   
+    hyphens: auto;     
+}
+
+
+.comocomprarcuenta{
+
+    width: 100%;     
+    background-color: rgb(202, 202, 202);
+    background-size: cover;
+    padding-left: 100px;
+    padding-top: 20px; 
+    padding-right: 100px; 
+    box-sizing: border-box; 
+    overflow: auto;
+}
+
+.comocomprarcuenta p{
+
+    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    width: 100%;       
+    overflow-wrap: break-word; 
+    word-wrap: break-word;   
+    hyphens: auto;     
+}
+
+.comocomprarcuenta li{
+
+    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    width: 100%;      
+    overflow-wrap: break-word;
+    word-wrap: break-word;     
+    hyphens: auto;     
+}
+
+.comocomprarcuenta h2{
+
+    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #6749a5;
+    width: 100%;       
+    overflow-wrap: break-word; 
+    word-wrap: break-word;     
+    hyphens: auto;     
+}
+
+
+.divfooter1 p,li {
+    transition: transform 0.3s ease, color 0.3s ease; 
+    cursor: pointer;
+    margin: 10px 0; 
+    color: #ffffff; 
+}
+
+.divfooter1 p:hover {
+    transform: scale(1.05);
+    color: #eb5bc7; 
+}
+
+.divfooter2 p {
+    transition: transform 0.3s ease, color 0.3s ease; 
+    cursor: pointer;
+    color: #ffffff; 
+}
+
+.divfooter2 p:hover {
+    transform: scale(1.05); 
+    color: #eb5bc7; 
+}
+
+
+.divfooter3 p {
+    transition: transform 0.3s ease, color 0.3s ease; 
+    cursor: pointer; 
+    color: #ffffff;
+}
+
+.divfooter3 p:hover {
+    transform: scale(1.05); 
+    color: #eb5bc7; 
+}
+
+
+
+form {
+    background: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(128, 128, 192, 0.1);
+}
+
+fieldset {
+    border: 1px solid #e0d7f5;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    color: #6a5a8d; 
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f8fd; 
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #816ea5; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #8977ad; 
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    transform: scale(1.2);
+}
+
+.h1formbooster{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: #6749a5;
+}
+
+
+.h1faq{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: #6749a5;
+}
+
+.h1comocomprarcuenta{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: #6749a5;
+}
+
+.mainsuport {
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(238, 233, 233);
+
+}
+
+.seccionsuport{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.seccion2suport{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    width: 200px;
+}
+
+button {
+    background-color: #6a55a9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5c4a9e;
+}
+
+
+
+.button-container {
+    text-align: center;
+}
+
+.login-button {
+    background-color: #6a55a9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    position: absolute; 
+    top: 70px;              
+    left: 300px;    
+}
+
+a.pedidos-button{
+
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    position: absolute;  
+    top: 70px;             
+    left: -200px;  
+}
+
+a.pedidos-button:hover {
+    background-color: #60406e;
+}
+
+a.login-button2 {
+    background-color: #6a55a9;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    position: absolute;  
+    top: 70px;              
+    left: 350px;    
+}
+
+a.login-button2:hover {
+    background-color: #60406e;
+}
+
+
+.login-button:hover {
+    background-color: #60406e;
+}
+
+
+.register-button {
+    background-color: #6a55a9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    position: absolute; 
+    top: 70px; 
+    left: 150px;    
+    
+}
+
+
+a.register-button2{
+    background-color: #6a55a9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    position: absolute; 
+    top: 70px; 
+    left: 130px;    
+  
+}
+
+a.register-button2:hover {
+    background-color: #60406e;
+}
+
+
+.register-button:hover {
+    background-color: #60406e;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #6749a5; 
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block; 
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.mainpanel{
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; 
+}
+
+.mainpanel h2{
+    color: black;
+}
+
+.clientesh1{
+
+    text-align: center;
+    justify-content: center;
+} 
+
+
+.contenidocuentas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 20px;
+}
+
+.cuenta {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex-basis: calc((100% - 60px) / 3); 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cuenta h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cuenta p {
+    margin: 5px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.gallery-image {
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.1);
+}
+

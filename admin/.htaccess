@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Área Restringida"
+AuthUserFile /opt/lampp/htdocs/proyecto/admin/.htpasswd
+Require valid-user
+    
