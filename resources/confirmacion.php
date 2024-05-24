@@ -8,13 +8,22 @@
     <title>Confirmación</title>
     <link rel="stylesheet" href="/proyecto/css/index.css">
     <style>
-        .container {
-            text-align: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+        
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    height: 470px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Si quieres que el contenido dentro de .container esté en columna */
+    align-items: center;
+    justify-content: center;
+}
+
+
     </style>
 </head>
 <body>

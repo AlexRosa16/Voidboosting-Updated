@@ -10,6 +10,64 @@ require_once '/opt/lampp/htdocs/proyecto/Inicio/conf.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel Clientes</title>
     <link rel="stylesheet" href="/proyecto/css/index.css"> 
+    <style>
+       
+       .contenidocuentas{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+       }
+    
+
+        .containercuentas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Tres columnas */
+            justify-content: center;
+            gap: 20px; /* Espacio entre las cuentas */
+            padding: 20px;
+            width: 80%; /* Ajusta el ancho según sea necesario */
+            margin-top: 20px; /* Espacio superior */
+        }
+
+        .cuenta {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cuenta h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .cuenta p {
+            margin: 5px 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery-image {
+            width: 200px;
+            height: auto;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
 <?php
